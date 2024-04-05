@@ -1,0 +1,19 @@
+###
+GET http://localhost:8600/heartbeat
+
+###
+GET http://localhost:8600/
+
+###
+POST  http://localhost:8600/
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "address": "24 Lumumba Drive"
+}
+
+###
+GET  http://localhost:8600/setup
+
+###
