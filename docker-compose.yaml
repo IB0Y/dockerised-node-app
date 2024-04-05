@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: '@password21'
+      POSTGRES_USER: admin
+      POSTGRES_DB: docker_node_app
+  app:
+    image: node_app
+    ports:
+      - 8600:8100
